@@ -1,0 +1,157 @@
+/* Fichier: styles.css */
+
+/* Variables de Couleur */
+:root {
+    --primary-blue: #4A90E2;    /* Bleu Clair */
+    --accent-blue: #2979ff;     /* Bleu plus vif */
+    --background-white: #ffffff;
+    --background-grey: #f4f7f9;
+    --text-dark: #333333;
+}
+
+/* -------------------- Styles de Base -------------------- */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3 {
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+/* -------------------- Header et Navigation -------------------- */
+
+.hero {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+.hero .role {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+.sticky-nav {
+    background-color: var(--background-white);
+    border-bottom: 2px solid var(--primary-blue);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.sticky-nav a {
+    color: var(--text-dark);
+    margin: 0 20px;
+    padding: 5px 0;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.sticky-nav a:hover {
+    border-bottom-color: var(--primary-blue);
+}
+
+/* -------------------- Sections de Contenu -------------------- */
+
+.content-section {
+    padding: 40px 0;
+}
+
+.grey-bg {
+    background-color: var(--background-grey);
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+/* -------------------- Grid de Compétences -------------------- */
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background: var(--background-white);
+    padding: 20px;
+    border-left: 5px solid var(--primary-blue);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    transition: transform 0.3s;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item h3 {
+    margin-top: 0;
+    color: var(--accent-blue);
+}
+
+/* -------------------- Cartes d'Expérience -------------------- */
+
+.job-card {
+    background: var(--background-white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.job-card h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.job-card .duration {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* -------------------- Pied de Page -------------------- */
+
+footer {
+    background-color: var(--text-dark);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer strong {
+    color: var(--primary-blue);
+}
+
+footer a {
+    color: var(--primary-blue);
+}
